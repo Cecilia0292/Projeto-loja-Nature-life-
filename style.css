@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Variáveis CSS */
+:root {
+    --primary-color: #704a18;
+    --secondary-color: #faebd7;
+    --background-color: #f2f6f9;
+    --hover-color: #ddd;
+    --font-family: 'Nunito Sans', sans-serif;
+    --font-size-large: 22px;
+    --font-size-small: 15px;
+    --padding-small: 2px 4px;
+    --padding-large: 20px;
+    --gap: 15px;
+}
+
+body {
+    font-family: var(--font-family);
+    background-image: url("imagens/fundo.jpg");
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+.header,
+.footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding-large);
+    margin: 10px;
+    margin-top: 0;
+    font-size: var(--font-size-large);
+    font-weight: 200;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+.footer {
+    text-align: right;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-size: var(--font-size-small);
+}
+
+table {
+    width: 80%;
+    height: 200px;
+    text-align: justify;
+    background-color: var(--background-color);
+    border-collapse: collapse;
+    vertical-align: bottom;
+    margin: auto;
+}
+
+thead {
+    font-size: var(--font-size-large);
+    font-weight: 100;
+    border-color: var(--primary-color);
+}
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    padding: var(--padding-large);
+    height: 10px;
+    vertical-align: bottom;
+    font-size: var(--font-size-large);
+    font-weight: 100;
+    align-items: center;
+    align-content: center;
+}
+
+td {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: var(--hover-color);
+}
+
+.subtotal {
+    background-color: var(--hover-color);
+    color:#704a18;
+    padding: 5px;
+    text-align:end;
+    vertical-align: bottom;
+    font-size: var(--font-size-large);
+    width: 79.3%;
+    height: 70px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+
+.quantidade {
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.botaoSomar,
+.botaoDiminuir {
+    border-radius: 8px;
+    font-size: 100%;
+    color: var(--secondary-color);
+    padding: var(--padding-small);
+
+}
+
+.botaoSomar {
+    background-color: #008000;
+    border-color: #008000;
+}
+
+.botaoDiminuir {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
