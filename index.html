@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdutosNaturais</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/appLoja.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <h1> Lojas Natural&Life </h1>
+        <p>Sua saúde em primeiro lugar</p>
+        <ul>
+            <li><a class="active" href="#home">Produtos naturais</a></li>
+            <li><a href="#news">Especiarias</a></li>
+            <li><a href="#contact">Florais</a></li>
+            <li><a href="#about">Fitoterápicos</a></li>
+            <li><a href="#contact">Chás</a></li>
+            <li><a href="#about">Sementes</a></li>
+            <li><a href="#about">Grãos</a></li>
+        </ul>
+    </div>
+    <table>
+        <tbody>
+            <tr>
+                <td> <img src="css/imagens/copaiimagem1.webp" alt="Produto 1" width="200">
+                </td>
+                <td>
+                    <div>Óleo de Copaíba 100% puro</div>
+                    <div>Bálsamo da Amazônia </div>
+                    <div>Código: 18541</div>
+                    <div>Marca: Nature vida</div>
+                </td>
+                <td id="valor_1">R$ 10,00</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_1">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(1, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(1, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_1">R$ 0,00</td>
+            </tr>
+            <tr>
+                <td> <img src="css/imagens/oraimagem2.jfif" alt="Produto 2" width="200">
+                </td>
+                <td>
+                    <div>Ora Pro Nobis</div>
+                    <div>Código: 87654</div>
+                    <div>Marca: Oliveira</div>
+                </td>
+                <td id="valor_2">R$ 8,00</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_2">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(2, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(2, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_2">R$ 0,00</td>
+            </tr>
+
+            <tr>
+                <td> <img src="css/imagens/hotelapimagem3.webp" alt="Produto 3" width="200">
+                </td>
+                <td>
+                    <div>Óleo essencial Hortelã</div>
+                    <div>Código: 76432</div>
+                    <div>Marca: Bioessência</div>
+                </td>
+                <td id="valor_3">R$ 16,90</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_3">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(3, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(3, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_3">R$ 0,00</td>
+            </tr>
+
+            <tr>
+                <td> <img src="css/imagens/chiaimagem4.webp" alt="Produto 4" width="200">
+                </td>
+                <td>
+                    <div>Sementes de chia</div>
+                    <div>Código: 76522</div>
+                    <div>Marca: Cemix</div>
+                </td>
+                <td id="valor_4">R$ 9,90</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_4">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(4, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(4, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_4">R$ 0,00</td>
+            </tr>
+
+            <tr>
+                <td> <img src="css/imagens/floralimagem5.webp" alt="Produto 5" width="200">
+                </td>
+                <td>
+                    <div>Floral de Bach Tô tranquilo</div>
+                    <div>Código: 65324</div>
+                    <div>Marca: lhórapi</div>
+                </td>
+                <td id="valor_5">R$ 12,90</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_5">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(5, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(5, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_5">R$ 0,00</td>
+            </tr>
+
+            <tr>
+                <td> <img src="css/imagens/hamaimagem6.webp" alt="Produto 6" width="200">
+                </td>
+                <td>
+                    <div>Hamamélis</div>
+                    <div>Código: 89765</div>
+                    <div>Marca: HPN</div>
+                </td>
+                <td id="valor_6">R$ 19,90</td>
+                <td>
+                    <div class="container">
+                        <span class="quantidade" id="quantidade_6">0</span>
+                        <button class="botaoSomar" onclick="alterarQtd(6, '+')">+</button>
+                        <button class="botaoDiminuir" onclick="alterarQtd(6, '-')">-</button>
+                    </div>
+                </td>
+                <td id="total_6">R$ 0,00</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="subtotal">
+        <h2>Subtotal: <span id="subtotal">R$ 0,00</span></h2>
+    </div>
+    <div class="footer">
+        <p>Contato: Lojinha@ProdutosNaturais.com</p>
+        <p>&copy; 2024 Produtos Naturais. Todos os direitos reservados.</p>
+    </div>
+</body>
+
+</html>
